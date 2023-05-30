@@ -16,7 +16,6 @@ export default function HomePage() {
     navigate within the embedded app and keep the browser in sync on reload.
   */
   const navigate = useNavigate();
-
   /*
     These are mock values. Setting these values lets you preview the loading markup and the empty state.
   */
@@ -53,12 +52,12 @@ export default function HomePage() {
       }
     },
   ];
+
   /* Set the QR codes to use in the list */
   const qrCodesMarkup = QRCodes?.length ? (
     <QRCodeIndex QRCodes={QRCodes} loading={isRefetching} />
   ) : null;
-
-
+  
   /* loadingMarkup uses the loading component from AppBridge and components from Polaris  */
   const loadingMarkup = isLoading ? (
     <Card sectioned>
@@ -91,6 +90,7 @@ export default function HomePage() {
     Use Polaris Page and TitleBar components to create the page layout,
     and include the empty state contents set above.
   */
+ 
   return (
     <Page fullWidth={!!qrCodesMarkup}>
       <TitleBar

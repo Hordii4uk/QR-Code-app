@@ -19,6 +19,7 @@
     "@shopify/app-bridge": "^3.7.7",
     "@shopify/app-bridge-react": "^3.7.7",
     "@shopify/polaris": "^10.49.1",
+    "@shopify/polaris-icons": "^7.0.1",
     "@shopify/react-form": "^2.5.5",
     "@shopify/react-hooks": "^3.0.5",
     "@vitejs/plugin-react": "1.2.0",

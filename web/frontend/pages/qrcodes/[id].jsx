@@ -8,7 +8,6 @@ import { QRCodeForm } from "../../components";
 
 export default function QRCodeEdit() {
   const breadcrumbs = [{ content: "QR codes", url: "/" }];
-
   /*
      These are mock values.
      Set isLoading to false to preview the page without loading markup.

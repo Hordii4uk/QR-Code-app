@@ -23,7 +23,7 @@ import {
 import { ImageMajor, AlertMinor } from "@shopify/polaris-icons";
 
 /* Import the useAuthenticatedFetch hook included in the Node app template */
-import { useAuthenticatedFetch, useAppQuery } from "../hooks";
+import { useAuthenticatedFetch } from "../hooks";
 
 /* Import custom hooks for forms */
 import { useForm, useField, notEmptyString } from "@shopify/react-form";
@@ -42,6 +42,7 @@ export function QRCodeForm({ QRCode: InitialQRCode }) {
   const [showResourcePicker, setShowResourcePicker] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(QRCode?.product);
   const navigate = useNavigate();
+  const appBridge = useAppBridge();
   const fetch = useAuthenticatedFetch();
   const deletedProduct = QRCode?.product?.title === "Deleted product";
 
